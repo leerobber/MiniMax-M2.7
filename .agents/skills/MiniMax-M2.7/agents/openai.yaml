@@ -1,0 +1,6 @@
+interface:
+  display_name: "MiniMax M2.7"
+  short_description: "Repo-specific patterns and workflows for MiniMax-M2.7"
+  default_prompt: "Use the MiniMax-M2.7 repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
