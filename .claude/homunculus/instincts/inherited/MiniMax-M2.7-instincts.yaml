@@ -1,0 +1,300 @@
+# Instincts generated from https://github.com/leerobber/MiniMax-M2.7
+# Generated: 2026-05-09T10:15:35.473Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: MiniMax-M2.7-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/leerobber/MiniMax-M2.7
+---
+
+# MiniMax M2.7 Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: Sovereign Core self-evolution loop (MiniMax M2.7 methodology)
+
+---
+id: MiniMax-M2.7-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/leerobber/MiniMax-M2.7
+---
+
+# MiniMax M2.7 Commit Length
+
+## Action
+
+Write moderate-length commit messages (~67 characters)
+
+## Evidence
+
+- Average commit message length: 67 chars
+- Based on 1 commits
+
+---
+id: MiniMax-M2.7-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/leerobber/MiniMax-M2.7
+---
+
+# MiniMax M2.7 Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: MiniMax-M2.7-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/leerobber/MiniMax-M2.7
+---
+
+# MiniMax M2.7 Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: MiniMax-M2.7-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/leerobber/MiniMax-M2.7
+---
+
+# MiniMax M2.7 Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: MiniMax-M2.7-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/leerobber/MiniMax-M2.7
+---
+
+# MiniMax M2.7 Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: minimax-m2.7-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: minimax-m2.7-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: minimax-m2.7-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: minimax-m2.7-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: minimax-m2.7-instinct-import-style
+trigger: "When importing modules within the package"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: minimax-m2.7-instinct-export-style
+trigger: "When exporting functions or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: minimax-m2.7-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Test Location
+
+## Action
+
+Place test files in the separate 'tests' folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+- Common folder: tests
+
+---
+id: minimax-m2.7-instinct-commit-prefix
+trigger: "When writing a commit message for a new feature"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Commit Prefix
+
+## Action
+
+Prefix the commit message with 'feat:'
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Seen in commit: 'feat: Sovereign Core self-evolution loop (MiniMax M2.7 methodology)'
+
+---
+id: minimax-m2.7-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: leerobber/MiniMax-M2.7
+---
+
+# Minimax M2.7 Instinct Commit Length
+
+## Action
+
+Aim for a message length around 67 characters
+
+## Evidence
+
+- Pattern in commits.averageLength
+
