@@ -1,0 +1,12 @@
+# Sovereign Core self-evolution loop — runtime dependencies
+# No cloud API SDKs required.
+
+# OpenAI-compatible client (used against local vLLM/litellm endpoint)
+openai>=1.12.0
+
+# Retry with exponential backoff
+backoff
+
+# Testing
+pytest
+pytest-asyncio
