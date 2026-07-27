@@ -1,4 +1,10 @@
 
+> **ARCHIVED — 2026-07-27**
+> This repo was a Python self-evolution loop testbed (ScaffoldAgent / EvalHarness / EvolutionMemory)
+> that modelled MiniMax M2.7's methodology locally. The work has been superseded by the full
+> Rust implementation in **[leerobber/aethyro-ntg](https://github.com/leerobber/aethyro-ntg)**
+> (Quad-Brain Phases 6.14–6.18, 586 tests, all green). No further development here.
+
 <div align="center">
   <picture>
     <source srcset="figures/MiniMaxLogo-Dark.png" media="(prefers-color-scheme: dark)">
