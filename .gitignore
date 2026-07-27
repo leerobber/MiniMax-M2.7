@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test / benchmark artifacts
+bench_results.txt
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Env
+.env
+sovereign_memory/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
