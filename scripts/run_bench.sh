@@ -86,14 +86,16 @@ banner "INSTALLING DEPENDENCIES"
 
 cd "$REPO_ROOT"
 
-pip install -q -r sovereign_requirements.txt
-pip install -q numpy
+PIP="python3 -m pip"
+
+$PIP install -q -r sovereign_requirements.txt
+$PIP install -q numpy
 
 # Install torch if GPU benchmarking is requested and torch isn't present
 if [ "$SKIP_GPU" = false ]; then
   if ! python3 -c "import torch" &>/dev/null; then
     echo "Installing PyTorch with CUDA support..."
-    pip install -q torch --index-url https://download.pytorch.org/whl/cu121
+    $PIP install -q torch --index-url https://download.pytorch.org/whl/cu121
   else
     echo "PyTorch already installed: $(python3 -c 'import torch; print(torch.__version__)')"
   fi
@@ -104,8 +106,8 @@ if [ "$SKIP_GPU" = false ]; then
     SKIP_GPU=true
   fi
 else
-  pip install -q torch --index-url https://download.pytorch.org/whl/cpu 2>/dev/null || \
-    pip install -q torch 2>/dev/null || true
+  $PIP install -q torch --index-url https://download.pytorch.org/whl/cpu 2>/dev/null || \
+    $PIP install -q torch 2>/dev/null || true
 fi
 
 echo "All dependencies installed."
